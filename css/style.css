@@ -1,0 +1,11 @@
+:root {
+  --bg-color: ivory;
+}
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+}
+body {
+  background-color: var(--bg-color);
+}
