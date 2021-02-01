@@ -2,6 +2,7 @@
   --body-color: white;
   --footer-color: darkgreen;
   --container-color: ivory;
+  --font-color: black;
 }
 *,
 *::before,
@@ -13,17 +14,35 @@ body {
   background-color: var(--body-color);
 }
 
+a {
+  text-decoration: none;
+}
+a:link {
+  text-decoration: none;
+}
+a:visited {
+  color: var(--font-color);
+}
+a:hover {
+  cursor: pointer;
+}
+a:active {
+  text-decoration: none;
+}
+a:focus {
+  text-decoration: none;
+}
+
 h1 {
   text-align: center;
 }
+
 .hero {
   background: var(--container-color);
-  outline: green 1px dashed;
 }
 .footer {
   background: var(--footer-color);
   color: var(--body-color);
-  outline: purple 1px dashed;
 }
 .container {
   margin: 0 auto;
