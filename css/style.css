@@ -1,14 +1,17 @@
 :root {
   --body-color: white;
   --footer-color: darkgreen;
-  --container-color: ivory;
+  --hero-color: ivory;
   --odd-item-color: cornsilk;
   --even-item-color: ivory;
   --announcements-color: blanchedalmond;
   --results-color: blanchedalmond;
   --rad-grad: radial-gradient(ivory, ivory, ivory, wheat, maroon);
-  --odd-row-color: var(--rad-grad);
-  --even-row-color: var(--rad-grad);
+  --row-color: var(--rad-grad);
+  --blurb-color: blanchedalmond;
+  --schedule-color: ivory;
+  --lin-grad: linear-gradient(cornsilk, ivory, ivory, cornsilk);
+  --game-color: var(--lin-grad);
   --font-color: black;
 }
 *,
@@ -42,12 +45,13 @@ a:focus {
 
 h1,
 h2,
-h3 {
+h3,
+h4 {
   text-align: center;
 }
 
 .hero {
-  background: var(--container-color);
+  background: var(--hero-color);
 }
 .footer {
   background: var(--footer-color);
@@ -87,10 +91,16 @@ h3 {
 }
 .row a {
   width: 45%;
+  background: var(--row-color);
 }
-.row a:nth-child(odd) {
-  background: var(--odd-row-color);
+
+.blurb {
+  background: var(--blurb-color);
 }
-.row a:nth-child(even) {
-  background: var(--even-row-color);
+
+.schedule {
+  background: var(--schedule-color);
+}
+.game {
+  background: var(--game-color);
 }
