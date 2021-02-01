@@ -49,3 +49,7 @@ a:focus {
   text-decoration: none;
 }
 ```
+
+## Notes
+
+The `small` tag works better inside the paragraph element.
