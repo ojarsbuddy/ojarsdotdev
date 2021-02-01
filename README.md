@@ -27,6 +27,8 @@ body {
 
 ## Links are tricksy
 
+Here is how I got the `visited` state to behave.
+
 ```css
 a {
   text-decoration: none;

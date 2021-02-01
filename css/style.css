@@ -2,6 +2,9 @@
   --body-color: white;
   --footer-color: darkgreen;
   --container-color: ivory;
+  --odd-item-color: cornsilk;
+  --even-item-color: ivory;
+  --announcements-color: blanchedalmond;
   --font-color: black;
 }
 *,
@@ -33,7 +36,9 @@ a:focus {
   text-decoration: none;
 }
 
-h1 {
+h1,
+h2,
+h3 {
   text-align: center;
 }
 
@@ -48,11 +53,24 @@ h1 {
   margin: 0 auto;
   width: 80%;
   max-width: 60em; /*60 * 16 = 960 */
-  outline: red 1px dashed;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.row {
+.announcements {
+  background: var(--announcements-color);
+}
+.item {
+  margin: 0 auto;
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  outline: green 1px dashed;
+}
+.item:nth-child(odd) {
+  background: var(--odd-item-color);
+}
+
+.item:nth-child(even) {
+  background: var(--even-item-color);
 }
