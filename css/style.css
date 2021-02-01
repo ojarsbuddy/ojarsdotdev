@@ -82,10 +82,14 @@ h3 {
 .row {
   width: 100%;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 .box {
+  width: 100%;
   padding: 0.5em 1em;
+}
+.row a {
+  width: 40%;
 }
 .row a:nth-child(odd) {
   background: var(--odd-row-color);
