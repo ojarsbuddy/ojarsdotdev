@@ -6,8 +6,9 @@
   --even-item-color: ivory;
   --announcements-color: blanchedalmond;
   --results-color: blanchedalmond;
-  --odd-row-color: ivory;
-  --even-row-color: wheat;
+  --rad-grad: radial-gradient(ivory, ivory, ivory, wheat, maroon);
+  --odd-row-color: var(--rad-grad);
+  --even-row-color: var(--rad-grad);
   --font-color: black;
 }
 *,
@@ -84,12 +85,8 @@ h3 {
   display: flex;
   justify-content: space-between;
 }
-.box {
-  width: 100%;
-  padding: 0.5em 1em;
-}
 .row a {
-  width: 40%;
+  width: 45%;
 }
 .row a:nth-child(odd) {
   background: var(--odd-row-color);
