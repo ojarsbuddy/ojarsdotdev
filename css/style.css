@@ -12,6 +12,7 @@
   --schedule-color: ivory;
   --lin-grad: linear-gradient(cornsilk, ivory, ivory, cornsilk);
   --game-color: var(--lin-grad);
+  --contacts-color: cornsilk;
   --font-color: black;
 }
 *,
@@ -60,7 +61,7 @@ h4 {
 .container {
   margin: 0 auto;
   width: 80%;
-  max-width: 60em; /*60 * 16 = 960 */
+  max-width: 50em; /*50 * 16 = 800 */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -68,8 +69,11 @@ h4 {
 
 .announcements {
   background: var(--announcements-color);
+  width: 100%;
 }
 .item {
+  width: 100%;
+
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -83,6 +87,7 @@ h4 {
 
 .results {
   background: var(--results-color);
+  width: 100%;
 }
 .row {
   width: 100%;
@@ -96,11 +101,25 @@ h4 {
 
 .blurb {
   background: var(--blurb-color);
+  width: 100%;
 }
 
 .schedule {
   background: var(--schedule-color);
+  width: 100%;
 }
 .game {
   background: var(--game-color);
+  width: 100%;
+}
+
+.contacts {
+  background: var(--contacts-color);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.partnerships {
+  display: flex;
+  flex-direction: row;
 }
