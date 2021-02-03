@@ -1,18 +1,27 @@
 :root {
   --body-color: white;
   --footer-color: darkgreen;
-  --hero-color: ivory;
+  --hero-grad: linear-gradient(ivory, ivory, ivory, blanchedalmond);
+  --hero-color: var(--hero-grad);
   --odd-item-color: cornsilk;
   --even-item-color: ivory;
   --announcements-color: blanchedalmond;
   --results-color: blanchedalmond;
   --rad-grad: radial-gradient(ivory, ivory, ivory, wheat, maroon);
   --row-color: var(--rad-grad);
-  --blurb-color: blanchedalmond;
-  --schedule-color: ivory;
+  --blurb-grad: linear-gradient(blanchedalmond, blanchedalmond, ivory);
+  --blurb-color: var(--blurb-grad);
+  --schedule-grad: linear-gradient(ivory, ivory, ivory, blanchedalmond);
+  --schedule-color: var(--schedule-grad);
   --lin-grad: linear-gradient(cornsilk, ivory, ivory, cornsilk);
   --game-color: var(--lin-grad);
-  --contacts-color: cornsilk;
+  --robots-color: blanchedalmond;
+  --robot-grad: linear-gradient(blanchedalmond, ivory, ivory, blanchedalmond);
+  --robots-item-color: var(--robot-grad);
+  --details-color: var(--blurb-grad);
+  --vacb-color: var(--rad-grad);
+  --contacts-color: ivory;
+  --partnerships-color: var(--lin-grad);
   --font-color: black;
 }
 *,
@@ -73,7 +82,6 @@ h4 {
 }
 .item {
   width: 100%;
-
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -92,7 +100,9 @@ h4 {
 .row {
   width: 100%;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
+  align-items: center;
 }
 .row a {
   width: 45%;
@@ -113,6 +123,26 @@ h4 {
   width: 100%;
 }
 
+.robots {
+  background: var(--robots-color);
+  width: 100%;
+}
+.robots-item {
+  background: var(--robots-item-color);
+  width: 40%;
+}
+
+.details {
+  background: var(--details-color);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.vacb {
+  background: var(--rad-grad);
+  width: 60%;
+}
+
 .contacts {
   background: var(--contacts-color);
   width: 100%;
@@ -120,6 +150,7 @@ h4 {
   flex-direction: column;
 }
 .partnerships {
+  background: var(--partnerships-color);
   display: flex;
   flex-direction: row;
 }
