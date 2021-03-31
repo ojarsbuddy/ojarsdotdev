@@ -1,0 +1,133 @@
+:root {
+  --body-color: white;
+  --hero-grad: linear-gradient(white, ivory, cornsilk);
+  --hero-color: var(--hero-grad);
+  --announcements-color: cornsilk;
+  --odd-item-color: ivory;
+  --even-item-color: cornsilk;
+  --stred: rgb(131, 42, 62);
+  --results-grad: linear-gradient(cornsilk, ivory);
+  --results-color: var(--results-grad);
+  --games-grad: linear-gradient(ivory, white, ivory);
+  --games-color: var(--games-grad);
+  --helpers-color: ivory;
+  --partnerships-grad: linear-gradient(ivory, white, cornsilk);
+  --partnerships-color: var(--partnerships-grad);
+  --information-grad: linear-gradient(cornsilk, ivory);
+  --information-color: var(--information-grad);
+  --utilities-grad: linear-gradient(ivory, white);
+  --utilities-color: var(--utilities-grad);
+  --footer-grad: linear-gradient(darkgreen, black);
+  --footer-color: var(--footer-grad);
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+a:link {
+  color: blue;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:visited {
+  color: blue;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:hover {
+  color: var(--stred);
+  background-color: transparent;
+  text-decoration: underline;
+}
+a:focus {
+  color: var(--stred);
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+body {
+  margin: 0;
+  background-color: var(--body-color);
+}
+footer {
+  background: var(--footer-color);
+  color: var(--body-color);
+}
+img {
+  width: 100%;
+}
+picture a {
+  display: grid;
+  place-items: center;
+}
+.hero {
+  background: var(--hero-color);
+  padding-top: 1em;
+}
+.container {
+  margin: 0 auto;
+  width: 80%;
+  max-width: 60ch; /*60 * 16 = 960 */
+  display: grid;
+  place-items: center;
+}
+.announcements {
+  background: var(--announcements-color);
+  width: 100%;
+}
+.item {
+  padding: 0.5em 0.5em;
+  display: grid;
+  place-items: center;
+}
+.item:nth-child(odd) {
+  background: var(--odd-item-color);
+  color: var(--stred);
+}
+.item:nth-child(even) {
+  background: var(--even-item-color);
+}
+.results {
+  outline: 1px solid var(--stred);
+  background: var(--results-color);
+  width: 100%;
+}
+.games {
+  background: var(--games-color);
+  width: 100%;
+}
+.grid-center {
+  display: grid;
+  place-items: center;
+}
+.helpers {
+  background: var(--helpers-color);
+  width: 100%;
+}
+.helper-row {
+  display: flex;
+  gap: 0.5em;
+}
+.helper-row > * {
+  flex: 1 1 0;
+  min-width: 0;
+  min-height: 0;
+}
+.partnerships {
+  background: var(--partnerships-color);
+  width: 100%;
+}
+.partnership-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.5em;
+}
+.information {
+  background: var(--information-color);
+  width: 100%;
+}
+.utilities {
+  background: var(--utilities-color);
+  width: 100%;
+}

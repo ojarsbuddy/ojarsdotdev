@@ -53,3 +53,5 @@ a:focus {
 ## Notes
 
 The `small` tag works better inside the paragraph element. It does not impose its structure outside the paragraph.
+
+Coverted the files to the current web site structure and content.
